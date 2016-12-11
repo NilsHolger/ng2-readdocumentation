@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, JsonpModule } from '@angular/http';
 import { InMemoryWebApiModule } from '../../node_modules/angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data-service';
 //333 js make rxms
@@ -41,6 +41,8 @@ import { HierarchicalDependencyInjectorsListComponent } from './hierarchicaldepe
 import { HdiEditorComponent } from './hdieditor/hdieditor.component';
 import { HdiCardComponent } from './hdicard/hdicard.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientComponent } from './httpclient/httpclient.component';
+import { HttpClientTohListComponent } from './httpclienttohlist/httpclienttohlist.component';
 
 
 @NgModule({
@@ -68,13 +70,16 @@ import { HomeComponent } from './home/home.component';
     HierarchicalDependencyInjectorsListComponent,
     HdiEditorComponent,
     HdiCardComponent,
-    HomeComponent 
+    HomeComponent,
+    HttpClientComponent,
+    HttpClientTohListComponent 
   ],
   imports: [
     BrowserModule,
     FormsModule,  
     AppRoutingModule,
     HttpModule,
+    JsonpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService)
   ],
   providers: [HeroService, HeroSearchService,

@@ -13,7 +13,7 @@ import { AnimTransEnterLeaveComponent } from './animtransenterleave/animtransent
 import { AttributeHostComponent } from './attributehost/attributehost.component';
 import { ComponentStylesComponent } from './componentstyles/componentstyles.component';
 import { HierarchicalDependencyInjectorsListComponent } from './hierarchicaldependencyinjectorslist/hierarchicaldependencyinjectorslist.component';
-
+import { HttpClientComponent } from './httpclient/httpclient.component';
 const routes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
     {path: 'home', component: HomeComponent},
@@ -28,7 +28,8 @@ const routes: Routes = [
     {path: 'transenterleave', component: AnimTransEnterLeaveComponent},
     {path: 'highlight', component: AttributeHostComponent},
     {path: 'componentstyles', component: ComponentStylesComponent},
-    {path: 'hdi', component: HierarchicalDependencyInjectorsListComponent}
+    {path: 'hdi', component: HierarchicalDependencyInjectorsListComponent},
+    {path: 'http', component: HttpClientComponent}
 ];
 
 @NgModule({
