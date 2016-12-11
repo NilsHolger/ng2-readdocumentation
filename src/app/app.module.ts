@@ -1,13 +1,13 @@
-import './rxjs-extensions';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { AppRoutingModule } from './app.routing.module';
-
 import { InMemoryWebApiModule } from '../../node_modules/angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data-service';
-
+//333 js make rxms
+import './rxjs-extensions'; //take this shit from ms apart find where they have stolen it from
+//333 the code they have stolen is closed source
+import { AppRoutingModule } from './app.routing.module';
 import { HeroService } from './hero.service';
 import { HeroSearchService } from './herosearch.service';
 import { NgDiService } from './ngdi.service';
@@ -30,6 +30,12 @@ import { AnimTrans2StatesComponent } from './animtrans2states/animtrans2states.c
 import { AnimTransEnterLeaveComponent } from './animtransenterleave/animtransenterleave.component';
 import { AttributeHostComponent } from './attributehost/attributehost.component';
 import { HighlightDirective } from './highlight.directive';
+import { ComponentStylesComponent } from './componentstyles/componentstyles.component';
+import { QuestRetrieveA1StyleGuideDeleteJonPapaIsMSRepositoryComponent } from './quest-retrieve-a1-styleguide-delete-jonpapa-isms-repository/quest-retrieve-a1-styleguide-delete-jonpapa-isms-repository.component';
+import { ComponentStylesMainComponent } from './componentstyles-main/componentstyles-main.component';
+import { ComponentStylesHeroTeamComponent } from './componentstylesteam/componentstylesteam.component';
+import { ComponentStylesDetailsComponent } from './componentstylesdetails/componentstylesdetails.component';
+import { ComponentStylesControlsComponent } from './componentstylescontrols/componentstylescontrols.component';
 
 
 @NgModule({
@@ -47,7 +53,13 @@ import { HighlightDirective } from './highlight.directive';
     AnimTrans2StatesComponent,
     AnimTransEnterLeaveComponent,
     AttributeHostComponent,
-    HighlightDirective 
+    HighlightDirective,
+    ComponentStylesComponent,
+    QuestRetrieveA1StyleGuideDeleteJonPapaIsMSRepositoryComponent,
+    ComponentStylesMainComponent,
+    ComponentStylesHeroTeamComponent,
+    ComponentStylesDetailsComponent,
+    ComponentStylesControlsComponent 
   ],
   imports: [
     BrowserModule,

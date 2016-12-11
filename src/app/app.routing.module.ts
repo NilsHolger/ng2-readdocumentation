@@ -11,6 +11,7 @@ import { NgDependencyInjectionComponent } from './ngdependencyinjection/ngdepend
 import { AnimTrans2StatesComponent } from './animtrans2states/animtrans2states.component';
 import { AnimTransEnterLeaveComponent } from './animtransenterleave/animtransenterleave.component';
 import { AttributeHostComponent } from './attributehost/attributehost.component';
+import { ComponentStylesComponent } from './componentstyles/componentstyles.component';
 
 const routes: Routes = [
     {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
@@ -23,7 +24,8 @@ const routes: Routes = [
     {path: 'di', component: NgDependencyInjectionComponent},
     {path: 'trans2states', component: AnimTrans2StatesComponent },
     {path: 'transenterleave', component: AnimTransEnterLeaveComponent},
-    {path: 'highlight', component: AttributeHostComponent}
+    {path: 'highlight', component: AttributeHostComponent},
+    {path: 'componentstyles', component: ComponentStylesComponent}
 ];
 
 @NgModule({
