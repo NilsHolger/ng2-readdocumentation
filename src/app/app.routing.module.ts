@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
@@ -12,9 +12,11 @@ import { AnimTrans2StatesComponent } from './animtrans2states/animtrans2states.c
 import { AnimTransEnterLeaveComponent } from './animtransenterleave/animtransenterleave.component';
 import { AttributeHostComponent } from './attributehost/attributehost.component';
 import { ComponentStylesComponent } from './componentstyles/componentstyles.component';
+import { HierarchicalDependencyInjectorsListComponent } from './hierarchicaldependencyinjectorslist/hierarchicaldependencyinjectorslist.component';
 
 const routes: Routes = [
-    {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
+    {path: '', redirectTo: '/home', pathMatch: 'full'},
+    {path: 'home', component: HomeComponent},
     {path: 'dashboard', component: DashboardComponent},
     {path: 'detail/:id', component: HeroDetailComponent},
     {path: 'heroes', component: HeroesComponent},
@@ -25,7 +27,8 @@ const routes: Routes = [
     {path: 'trans2states', component: AnimTrans2StatesComponent },
     {path: 'transenterleave', component: AnimTransEnterLeaveComponent},
     {path: 'highlight', component: AttributeHostComponent},
-    {path: 'componentstyles', component: ComponentStylesComponent}
+    {path: 'componentstyles', component: ComponentStylesComponent},
+    {path: 'hdi', component: HierarchicalDependencyInjectorsListComponent}
 ];
 
 @NgModule({

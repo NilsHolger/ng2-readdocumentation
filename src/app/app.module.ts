@@ -16,6 +16,7 @@ import { UserService } from './user.service';
 import { NgDiProviderService } from './ngdiprovider.service';
 import { HeroesAnimationsService } from './heroesanimations.service';
 
+import { HdiHeroesService } from './hdiheroes.service';
 import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesComponent } from './heroes/heroes.component';
@@ -36,6 +37,10 @@ import { ComponentStylesMainComponent } from './componentstyles-main/componentst
 import { ComponentStylesHeroTeamComponent } from './componentstylesteam/componentstylesteam.component';
 import { ComponentStylesDetailsComponent } from './componentstylesdetails/componentstylesdetails.component';
 import { ComponentStylesControlsComponent } from './componentstylescontrols/componentstylescontrols.component';
+import { HierarchicalDependencyInjectorsListComponent } from './hierarchicaldependencyinjectorslist/hierarchicaldependencyinjectorslist.component';
+import { HdiEditorComponent } from './hdieditor/hdieditor.component';
+import { HdiCardComponent } from './hdicard/hdicard.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -59,7 +64,11 @@ import { ComponentStylesControlsComponent } from './componentstylescontrols/comp
     ComponentStylesMainComponent,
     ComponentStylesHeroTeamComponent,
     ComponentStylesDetailsComponent,
-    ComponentStylesControlsComponent 
+    ComponentStylesControlsComponent,
+    HierarchicalDependencyInjectorsListComponent,
+    HdiEditorComponent,
+    HdiCardComponent,
+    HomeComponent 
   ],
   imports: [
     BrowserModule,
@@ -69,7 +78,8 @@ import { ComponentStylesControlsComponent } from './componentstylescontrols/comp
     InMemoryWebApiModule.forRoot(InMemoryDataService)
   ],
   providers: [HeroService, HeroSearchService,
-  NgDiService, LoggerService, UserService, NgDiProviderService, HeroesAnimationsService],
+  NgDiService, LoggerService, UserService, NgDiProviderService,
+   HeroesAnimationsService, HdiHeroesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
