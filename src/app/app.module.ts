@@ -27,6 +27,9 @@ import { NgFormComponent } from './ngform/ngform.component';
 import { IWantAndroidComponent } from './iwantandroid/iwantandroid.component';
 import { NgDependencyInjectionComponent } from './ngdependencyinjection/ngdependencyinjection.component';
 import { AnimTrans2StatesComponent } from './animtrans2states/animtrans2states.component';
+import { AnimTransEnterLeaveComponent } from './animtransenterleave/animtransenterleave.component';
+import { AttributeHostComponent } from './attributehost/attributehost.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -41,7 +44,10 @@ import { AnimTrans2StatesComponent } from './animtrans2states/animtrans2states.c
     NgFormComponent,
     IWantAndroidComponent,
     NgDependencyInjectionComponent,
-    AnimTrans2StatesComponent 
+    AnimTrans2StatesComponent,
+    AnimTransEnterLeaveComponent,
+    AttributeHostComponent,
+    HighlightDirective 
   ],
   imports: [
     BrowserModule,

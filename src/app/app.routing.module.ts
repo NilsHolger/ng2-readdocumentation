@@ -9,6 +9,8 @@ import { ClickMeComponent } from './clickme/clickme.component';
 import { NgFormComponent } from './ngform/ngform.component';
 import { NgDependencyInjectionComponent } from './ngdependencyinjection/ngdependencyinjection.component';
 import { AnimTrans2StatesComponent } from './animtrans2states/animtrans2states.component';
+import { AnimTransEnterLeaveComponent } from './animtransenterleave/animtransenterleave.component';
+import { AttributeHostComponent } from './attributehost/attributehost.component';
 
 const routes: Routes = [
     {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
@@ -19,8 +21,9 @@ const routes: Routes = [
     {path: 'clickme', component: ClickMeComponent},
     {path: 'form', component: NgFormComponent},
     {path: 'di', component: NgDependencyInjectionComponent},
-    {path: 'trans2states', component: AnimTrans2StatesComponent }
-
+    {path: 'trans2states', component: AnimTrans2StatesComponent },
+    {path: 'transenterleave', component: AnimTransEnterLeaveComponent},
+    {path: 'highlight', component: AttributeHostComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,42 @@
+ul {
+    list-style-type: none;
+    padding: o;
+}
+
+li {
+    display: block;
+    width: 120px;
+    line-height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #eee;
+    border-radius: 4px;
+    margin: 10px 0 50px 0;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.active {
+    background-color: #cfd8dc;
+    transform: scale(1.1);
+}
+
+.inactive {
+    background-color: #eee;
+    transform: scale(1);
+}
+
+.center-screen {
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    margin-bottom: 100px;
+}
+.right-screen {
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    margin-bottom: 100px;
+}

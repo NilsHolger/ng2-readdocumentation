@@ -22,8 +22,7 @@ import { HeroesAnimationsService } from '../heroesanimations.service';
         backgroundColor: '#cfd8dc',
         transform: 'scale(2)'
       })),
-      transition('inactive => active', animate('500ms ease-in')),
-      transition('active => inactive', animate('500ms ease-out'))
+      transition('inactive <=> active', animate('500ms ease-in'))
     ])
   ]
 })
