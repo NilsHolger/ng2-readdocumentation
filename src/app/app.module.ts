@@ -50,6 +50,8 @@ import { WikiSmartComponent } from './wiki-smart/wiki-smart.component';
 import { LifeCycleHooksComponent } from './lifecyclehooks/lifecyclehooks.component';
 import { PeekaBooParentComponent } from './peekabooparent/peekabooparent.component';
 import { PeekaBooComponent } from './peekaboo/peekaboo.component';
+import { SpyComponent } from './spy/spy.component';
+import { SpyDirective } from './spy.directive';
 
 
 @NgModule({
@@ -85,7 +87,9 @@ import { PeekaBooComponent } from './peekaboo/peekaboo.component';
     WikiSmartComponent,
     LifeCycleHooksComponent,
     PeekaBooParentComponent,
-    PeekaBooComponent 
+    PeekaBooComponent,
+    SpyComponent,
+    SpyDirective 
   ],
   imports: [
     BrowserModule,
