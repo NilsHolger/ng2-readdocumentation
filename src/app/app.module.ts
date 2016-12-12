@@ -15,6 +15,7 @@ import { LoggerService } from './logger.service';
 import { UserService } from './user.service';
 import { NgDiProviderService } from './ngdiprovider.service';
 import { HeroesAnimationsService } from './heroesanimations.service';
+import { WikipediaService } from './wikipedia.service';
 
 import { HdiHeroesService } from './hdiheroes.service';
 import { AppComponent } from './app.component';
@@ -44,6 +45,8 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientComponent } from './httpclient/httpclient.component';
 import { HttpClientTohListComponent } from './httpclienttohlist/httpclienttohlist.component';
 import { HttpClientTohListPromiseComponent } from './httpclienttohlistpromise/httpclienttohlistpromise.component';
+import { WikiComponent } from './wiki/wiki.component';
+import { WikiSmartComponent } from './wiki-smart/wiki-smart.component';
 
 
 @NgModule({
@@ -74,7 +77,9 @@ import { HttpClientTohListPromiseComponent } from './httpclienttohlistpromise/ht
     HomeComponent,
     HttpClientComponent,
     HttpClientTohListComponent,
-    HttpClientTohListPromiseComponent 
+    HttpClientTohListPromiseComponent,
+    WikiComponent,
+    WikiSmartComponent 
   ],
   imports: [
     BrowserModule,
@@ -86,7 +91,7 @@ import { HttpClientTohListPromiseComponent } from './httpclienttohlistpromise/ht
   ],
   providers: [HeroService, HeroSearchService,
   NgDiService, LoggerService, UserService, NgDiProviderService,
-   HeroesAnimationsService, HdiHeroesService],
+   HeroesAnimationsService, HdiHeroesService, WikipediaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
