@@ -14,6 +14,7 @@ import { AttributeHostComponent } from './attributehost/attributehost.component'
 import { ComponentStylesComponent } from './componentstyles/componentstyles.component';
 import { HierarchicalDependencyInjectorsListComponent } from './hierarchicaldependencyinjectorslist/hierarchicaldependencyinjectorslist.component';
 import { HttpClientComponent } from './httpclient/httpclient.component';
+import { LifeCycleHooksComponent } from './lifecyclehooks/lifecyclehooks.component';
 const routes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
     {path: 'home', component: HomeComponent},
@@ -22,14 +23,15 @@ const routes: Routes = [
     {path: 'heroes', component: HeroesComponent},
     {path: 'displayingdata', component: DisplayingDataComponent},
     {path: 'clickme', component: ClickMeComponent},
-    {path: 'form', component: NgFormComponent},
-    {path: 'di', component: NgDependencyInjectionComponent},
-    {path: 'trans2states', component: AnimTrans2StatesComponent },
-    {path: 'transenterleave', component: AnimTransEnterLeaveComponent},
-    {path: 'highlight', component: AttributeHostComponent},
+    {path: 'ngform', component: NgFormComponent},
+    {path: 'dependencyinjection', component: NgDependencyInjectionComponent},
+    {path: 'transition2states', component: AnimTrans2StatesComponent },
+    {path: 'transitionenterleave', component: AnimTransEnterLeaveComponent},
+    {path: 'attributehighlight', component: AttributeHostComponent},
     {path: 'componentstyles', component: ComponentStylesComponent},
-    {path: 'hdi', component: HierarchicalDependencyInjectorsListComponent},
-    {path: 'http', component: HttpClientComponent}
+    {path: 'hierarchicaldependencyinjection', component: HierarchicalDependencyInjectorsListComponent},
+    {path: 'http', component: HttpClientComponent},
+    {path: 'lifecyclehooks', component: LifeCycleHooksComponent}
 ];
 
 @NgModule({

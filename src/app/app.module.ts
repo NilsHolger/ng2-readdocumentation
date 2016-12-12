@@ -47,6 +47,9 @@ import { HttpClientTohListComponent } from './httpclienttohlist/httpclienttohlis
 import { HttpClientTohListPromiseComponent } from './httpclienttohlistpromise/httpclienttohlistpromise.component';
 import { WikiComponent } from './wiki/wiki.component';
 import { WikiSmartComponent } from './wiki-smart/wiki-smart.component';
+import { LifeCycleHooksComponent } from './lifecyclehooks/lifecyclehooks.component';
+import { PeekaBooParentComponent } from './peekabooparent/peekabooparent.component';
+import { PeekaBooComponent } from './peekaboo/peekaboo.component';
 
 
 @NgModule({
@@ -79,7 +82,10 @@ import { WikiSmartComponent } from './wiki-smart/wiki-smart.component';
     HttpClientTohListComponent,
     HttpClientTohListPromiseComponent,
     WikiComponent,
-    WikiSmartComponent 
+    WikiSmartComponent,
+    LifeCycleHooksComponent,
+    PeekaBooParentComponent,
+    PeekaBooComponent 
   ],
   imports: [
     BrowserModule,
