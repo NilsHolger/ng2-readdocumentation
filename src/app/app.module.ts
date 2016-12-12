@@ -43,6 +43,7 @@ import { HdiCardComponent } from './hdicard/hdicard.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientComponent } from './httpclient/httpclient.component';
 import { HttpClientTohListComponent } from './httpclienttohlist/httpclienttohlist.component';
+import { HttpClientTohListPromiseComponent } from './httpclienttohlistpromise/httpclienttohlistpromise.component';
 
 
 @NgModule({
@@ -72,7 +73,8 @@ import { HttpClientTohListComponent } from './httpclienttohlist/httpclienttohlis
     HdiCardComponent,
     HomeComponent,
     HttpClientComponent,
-    HttpClientTohListComponent 
+    HttpClientTohListComponent,
+    HttpClientTohListPromiseComponent 
   ],
   imports: [
     BrowserModule,
