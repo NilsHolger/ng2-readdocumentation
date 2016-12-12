@@ -52,6 +52,8 @@ import { PeekaBooParentComponent } from './peekabooparent/peekabooparent.compone
 import { PeekaBooComponent } from './peekaboo/peekaboo.component';
 import { SpyComponent } from './spy/spy.component';
 import { SpyDirective } from './spy.directive';
+import { OnChangesComponent } from './onchanges/onchanges.component';
+import { OnChangesParentComponent } from './onchangesparent/onchangesparent.component';
 
 
 @NgModule({
@@ -89,7 +91,9 @@ import { SpyDirective } from './spy.directive';
     PeekaBooParentComponent,
     PeekaBooComponent,
     SpyComponent,
-    SpyDirective 
+    SpyDirective,
+    OnChangesComponent,
+    OnChangesParentComponent 
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<div class="parent">
+  <h2>{{title}}</h2>
+  <table>
+    <tr>
+      <td>Heroes.name: </td>
+      <td><input [(ngModel)]="hero.name"></td>
+    </tr>
+    <tr>
+      <td>Power: </td>
+      <td><input [(ngModel)]="power"></td>
+    </tr>
+  </table>
+
+  <p><button (click)="reset()">Reset Log</button></p>
+  <app-onchanges [hero]="hero" [power]="power"></app-onchanges>
+</div>
