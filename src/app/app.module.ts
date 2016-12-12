@@ -54,6 +54,8 @@ import { SpyComponent } from './spy/spy.component';
 import { SpyDirective } from './spy.directive';
 import { OnChangesComponent } from './onchanges/onchanges.component';
 import { OnChangesParentComponent } from './onchangesparent/onchangesparent.component';
+import { DoCheckComponent } from './docheck/docheck.component';
+import { DoCheckParentComponent } from './docheckparent/docheckparent.component';
 
 
 @NgModule({
@@ -93,7 +95,9 @@ import { OnChangesParentComponent } from './onchangesparent/onchangesparent.comp
     SpyComponent,
     SpyDirective,
     OnChangesComponent,
-    OnChangesParentComponent 
+    OnChangesParentComponent,
+    DoCheckComponent,
+    DoCheckParentComponent 
   ],
   imports: [
     BrowserModule,
