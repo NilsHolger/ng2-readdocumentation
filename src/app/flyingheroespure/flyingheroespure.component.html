@@ -1,0 +1,25 @@
+<h2>{{title}}</h2>
+<p>
+New her o:
+<input type="text" #box (keyup.enter)="addHero(box.value); box.value=''" placeholder="hero name">
+<input id="can-teleport" type="checkbox" [(ngModel)]="canTeleport">can Teleport
+</p>
+<p>
+  <input id="mutate" type="checkbox" [(ngModel)]="mutate">Mutate array
+  <button (click)="reset()">Reset</button>
+</p>
+
+<h4>Heroes who teleport (piped)</h4>
+<div id="teleporters">
+    <div *ngFor="let hero of (heroes | teleportingHeroes)">
+      {{hero.name}}
+    </div>
+</div>
+
+<div>All Heroes (no pipe)</div>
+<div id="all">
+  <div *ngFor="let hero of heroes">
+    {{hero.name}}
+  </div>
+</div>
+

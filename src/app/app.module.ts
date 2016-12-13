@@ -64,6 +64,15 @@ import { AfterContentComponent } from './aftercontent/aftercontent.component';
 import { AfterContentParentComponent } from './aftercontentparent/aftercontentparent.component';
 import { MyCounterComponent } from './mycounter/mycounter.component';
 import { CounterParentComponent } from './counterparent/counterparent.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { Happybirthdayv1Component } from './happybirthdayv1/happybirthdayv1.component';
+import { Happybirthdayv2Component } from './happybirthdayv2/happybirthdayv2.component';
+import { ExponentialStrengthPipe } from './exponentialstrength.pipe';
+import { PowerBoosterComponent } from './powerbooster/powerbooster.component';
+import { PowerBoosterCalculatorComponent } from './powerboostercalculator/powerboostercalculator.component';
+import { FlyingHeroesPureComponent } from './flyingheroespure/flyingheroespure.component';
+import { FlyingHeroesImpureComponent } from './flyingheroesimpure/flyingheroesimpure.component';
+import { TeleportingHeroesPipe, TeleportingHeroesPipeImpure } from './teleportingheroes.pipe';
 
 
 @NgModule({
@@ -113,7 +122,17 @@ import { CounterParentComponent } from './counterparent/counterparent.component'
     AfterContentComponent,
     AfterContentParentComponent,
     MyCounterComponent,
-    CounterParentComponent 
+    CounterParentComponent,
+    PipesComponent,
+    Happybirthdayv1Component,
+    Happybirthdayv2Component,
+    ExponentialStrengthPipe,
+    PowerBoosterComponent,
+    PowerBoosterCalculatorComponent,
+    FlyingHeroesPureComponent,
+    FlyingHeroesImpureComponent,
+    TeleportingHeroesPipe,
+    TeleportingHeroesPipeImpure
   ],
   imports: [
     BrowserModule,
