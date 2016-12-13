@@ -56,6 +56,9 @@ import { OnChangesComponent } from './onchanges/onchanges.component';
 import { OnChangesParentComponent } from './onchangesparent/onchangesparent.component';
 import { DoCheckComponent } from './docheck/docheck.component';
 import { DoCheckParentComponent } from './docheckparent/docheckparent.component';
+import { AfterViewComponent } from './afterview/afterview.component';
+import { AfterViewParentComponent } from './afterviewparent/afterviewparent.component';
+import { AfterViewParentParentComponent } from './afterviewparentparent/afterviewparentparent.component';
 
 
 @NgModule({
@@ -97,7 +100,10 @@ import { DoCheckParentComponent } from './docheckparent/docheckparent.component'
     OnChangesComponent,
     OnChangesParentComponent,
     DoCheckComponent,
-    DoCheckParentComponent 
+    DoCheckParentComponent,
+    AfterViewComponent,
+    AfterViewParentComponent,
+    AfterViewParentParentComponent 
   ],
   imports: [
     BrowserModule,

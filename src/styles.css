@@ -107,6 +107,21 @@ nav a.active {
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
+.parent {
+    color: #666;
+    margin: 14px 0;
+    padding: 8px;
+}
+
+input {
+    margin: 4px;
+    padding: 4px;
+}
+
+.comment {
+    color: #ff0000;
+    font-style: italic;
+} 
 /* . . . */
 /* everywhere else */
 * {
