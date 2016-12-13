@@ -59,6 +59,9 @@ import { DoCheckParentComponent } from './docheckparent/docheckparent.component'
 import { AfterViewComponent } from './afterview/afterview.component';
 import { AfterViewParentComponent } from './afterviewparent/afterviewparent.component';
 import { AfterViewParentParentComponent } from './afterviewparentparent/afterviewparentparent.component';
+import { MakeChildComponent } from './makechild/makechild.component';
+import { AfterContentComponent } from './aftercontent/aftercontent.component';
+import { AfterContentParentComponent } from './aftercontentparent/aftercontentparent.component';
 
 
 @NgModule({
@@ -103,7 +106,10 @@ import { AfterViewParentParentComponent } from './afterviewparentparent/aftervie
     DoCheckParentComponent,
     AfterViewComponent,
     AfterViewParentComponent,
-    AfterViewParentParentComponent 
+    AfterViewParentParentComponent,
+    MakeChildComponent,
+    AfterContentComponent,
+    AfterContentParentComponent 
   ],
   imports: [
     BrowserModule,
