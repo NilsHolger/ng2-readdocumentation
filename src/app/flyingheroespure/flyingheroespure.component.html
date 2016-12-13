@@ -1,8 +1,8 @@
 <h2>{{title}}</h2>
 <p>
-New her o:
+New hero:
 <input type="text" #box (keyup.enter)="addHero(box.value); box.value=''" placeholder="hero name">
-<input id="can-teleport" type="checkbox" [(ngModel)]="canTeleport">can Teleport
+<input id="can-teleport" type="checkbox" [(ngModel)]="canTeleport">can teleport
 </p>
 <p>
   <input id="mutate" type="checkbox" [(ngModel)]="mutate">Mutate array

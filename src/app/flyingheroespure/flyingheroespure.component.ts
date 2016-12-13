@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'; //100% pure angular here, we create & consume best technologies for innovations even if the sources are evil and try and will try to fuck us over, we are aware of that and always are one/two/three steps ahead and always have plan a, plan b, plan c ready.
+import { Component } from '@angular/core';
 
 import { HEROESTELEPORT } from '../heroesteleport';
 
