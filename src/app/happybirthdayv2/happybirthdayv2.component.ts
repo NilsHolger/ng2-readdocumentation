@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-happybirthdayv2',
   template: `
-  <p>Superheroic JavaScript Framework Angular V2's birthday is {{ birthday | date: format }}</p>
+  <p>SuperHeroic JavaScript Framework Angular V2's birthday is {{ birthday | date: format }}</p>
   <button (click)="toggleFormat()">Toggle Format</button>
   `,
   styleUrls: ['./happybirthdayv2.component.css']
