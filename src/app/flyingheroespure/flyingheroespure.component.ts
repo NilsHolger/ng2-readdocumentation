@@ -5,7 +5,7 @@ import { HEROESTELEPORT } from '../heroesteleport';
 @Component({
   selector: 'app-flyingheroespure',
   templateUrl: './flyingheroespure.component.html',
-  styles: ['.teleporters, .all {font-style: italic;}']
+  styles: ['#teleporters, #all {font-style: italic;}']
 })
 export class FlyingHeroesPureComponent {
   heroes: any[] = [];
