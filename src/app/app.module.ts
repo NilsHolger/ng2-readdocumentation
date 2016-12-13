@@ -62,6 +62,8 @@ import { AfterViewParentParentComponent } from './afterviewparentparent/aftervie
 import { MakeChildComponent } from './makechild/makechild.component';
 import { AfterContentComponent } from './aftercontent/aftercontent.component';
 import { AfterContentParentComponent } from './aftercontentparent/aftercontentparent.component';
+import { MyCounterComponent } from './mycounter/mycounter.component';
+import { CounterParentComponent } from './counterparent/counterparent.component';
 
 
 @NgModule({
@@ -109,7 +111,9 @@ import { AfterContentParentComponent } from './aftercontentparent/aftercontentpa
     AfterViewParentParentComponent,
     MakeChildComponent,
     AfterContentComponent,
-    AfterContentParentComponent 
+    AfterContentParentComponent,
+    MyCounterComponent,
+    CounterParentComponent 
   ],
   imports: [
     BrowserModule,
