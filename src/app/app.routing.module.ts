@@ -16,6 +16,7 @@ import { HierarchicalDependencyInjectorsListComponent } from './hierarchicaldepe
 import { HttpClientComponent } from './httpclient/httpclient.component';
 import { LifeCycleHooksComponent } from './lifecyclehooks/lifecyclehooks.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { RoutingComponent } from './routing/routing.component';
 
 const routes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -34,7 +35,8 @@ const routes: Routes = [
     {path: 'hierarchicaldependencyinjection', component: HierarchicalDependencyInjectorsListComponent},
     {path: 'http', component: HttpClientComponent},
     {path: 'lifecyclehooks', component: LifeCycleHooksComponent},
-    {path: 'pipes', component: PipesComponent}
+    {path: 'pipes', component: PipesComponent},
+    {path: 'routing', component: RoutingComponent}
 ];
 
 @NgModule({

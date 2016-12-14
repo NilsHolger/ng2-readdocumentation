@@ -1,0 +1,7 @@
+[
+    {"name": "Flash", "canTeleport": true},
+    {"name": "Wonderwoman", "canTeleport": true},
+    {"name": "Windstorm", "canTeleport": false},
+    {"name": "Tornado", "canTeleport": false},
+    {"name": "Mr. Nice", "canTeleport": true}
+]

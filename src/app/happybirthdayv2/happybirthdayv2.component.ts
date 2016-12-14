@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   `,
   styleUrls: ['./happybirthdayv2.component.css']
 })
-export class Happybirthdayv2Component {
+export class HappyBirthdayV2Component {
   title = "we honor angular 2";
   birthday = new Date(2015, 4, 30);
   toggle = true; // start with true === fullDate

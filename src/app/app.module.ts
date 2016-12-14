@@ -65,14 +65,17 @@ import { AfterContentParentComponent } from './aftercontentparent/aftercontentpa
 import { MyCounterComponent } from './mycounter/mycounter.component';
 import { CounterParentComponent } from './counterparent/counterparent.component';
 import { PipesComponent } from './pipes/pipes.component';
-import { Happybirthdayv1Component } from './happybirthdayv1/happybirthdayv1.component';
-import { Happybirthdayv2Component } from './happybirthdayv2/happybirthdayv2.component';
+import { HappyBirthdayV1Component } from './happybirthdayv1/happybirthdayv1.component';
+import { HappyBirthdayV2Component } from './happybirthdayv2/happybirthdayv2.component';
 import { ExponentialStrengthPipe } from './exponentialstrength.pipe';
 import { PowerBoosterComponent } from './powerbooster/powerbooster.component';
 import { PowerBoosterCalculatorComponent } from './powerboostercalculator/powerboostercalculator.component';
 import { FlyingHeroesPureComponent } from './flyingheroespure/flyingheroespure.component';
 import { FlyingHeroesImpureComponent } from './flyingheroesimpure/flyingheroesimpure.component';
 import { TeleportingHeroesPipe, TeleportingHeroesPipeImpure } from './teleportingheroes.pipe';
+import { HeroAsyncMessageComponent } from './heroasyncmessage/heroasyncmessage.component';
+import { HeroListComponent } from './herolist/herolist.component';
+import { RoutingComponent } from './routing/routing.component';
 
 
 @NgModule({
@@ -124,15 +127,18 @@ import { TeleportingHeroesPipe, TeleportingHeroesPipeImpure } from './teleportin
     MyCounterComponent,
     CounterParentComponent,
     PipesComponent,
-    Happybirthdayv1Component,
-    Happybirthdayv2Component,
+    HappyBirthdayV1Component,
+    HappyBirthdayV2Component,
     ExponentialStrengthPipe,
     PowerBoosterComponent,
     PowerBoosterCalculatorComponent,
     FlyingHeroesPureComponent,
     FlyingHeroesImpureComponent,
     TeleportingHeroesPipe,
-    TeleportingHeroesPipeImpure
+    TeleportingHeroesPipeImpure,
+    HeroAsyncMessageComponent,
+    HeroListComponent,
+    RoutingComponent
   ],
   imports: [
     BrowserModule,
