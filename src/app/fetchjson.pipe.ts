@@ -17,9 +17,7 @@ export class FetchJSONPipe implements PipeTransform {
       this.cachedData = null;
       this.cachedUrl = url;
       this.http.get(url).map(result => result.json())
-                        .subscribe(result => { 
-                          console.log('IN PIPE' + result);
-                          this.cachedData = result; });
+                        .subscribe(result =>  this.cachedData = result);
     }   
     return this.cachedData;
   }

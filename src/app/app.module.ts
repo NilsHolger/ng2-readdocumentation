@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { InMemoryWebApiModule } from '../../node_modules/angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data-service';
-//333 js make rxms
-import './rxjs-extensions'; //take this shit from ms apart find where they have stolen it from
-//333 the code they have stolen is closed source
+
+import './rxjs-extensions';
+
 import { AppRoutingModule } from './app.routing.module';
 import { HeroService } from './hero.service';
 import { HeroSearchService } from './herosearch.service';
@@ -76,6 +76,13 @@ import { TeleportingHeroesPipe, TeleportingHeroesPipeImpure } from './teleportin
 import { HeroAsyncMessageComponent } from './heroasyncmessage/heroasyncmessage.component';
 import { HeroListComponent } from './herolist/herolist.component';
 import { RoutingComponent } from './routing/routing.component';
+import { AdminComponent } from './routing/admin/admin.component';
+import { CrisisHeroesComponent } from './routing/heroes/heroes.component';
+import { LoginComponent } from './routing/login/login.component';
+import { CrisisCenterHomeComponent } from './routing/crisiscenter/crisiscenterhome/crisiscenterhome.component';
+import { CrisisCenterListComponent } from './routing/crisiscenter/crisiscenterlist/crisiscenterlist.component';
+import { CrisisCenterDetailComponent } from './routing/crisiscenter/crisiscenterdetail/crisiscenterdetail.component';
+import { CrisisCenterRouterComponent } from './routing/crisiscenter/crisiscenter/crisiscenter.component';
 
 
 @NgModule({
@@ -138,7 +145,14 @@ import { RoutingComponent } from './routing/routing.component';
     TeleportingHeroesPipeImpure,
     HeroAsyncMessageComponent,
     HeroListComponent,
-    RoutingComponent
+    RoutingComponent,
+    AdminComponent,
+    HeroesComponent,
+    LoginComponent,
+    CrisisCenterHomeComponent,
+    CrisisCenterListComponent,
+    CrisisCenterDetailComponent,
+    CrisisCenterRouterComponent
   ],
   imports: [
     BrowserModule,
